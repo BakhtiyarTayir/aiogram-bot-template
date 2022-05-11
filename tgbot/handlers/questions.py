@@ -17,7 +17,7 @@ async def cmd_start(message: Message):
 @router.message(Text(text="да", text_ignore_case=True))
 async def answer_yes(message: Message):
     await message.answer(
-        "Это здорово!",
+        "Это здорово!", 
         reply_markup=ReplyKeyboardRemove()
     )
 
